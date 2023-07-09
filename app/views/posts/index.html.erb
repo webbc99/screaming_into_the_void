@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <h2>All Prosts</h2>
+  <div class="grid"">
+    <div>
+      <%= render 'post', obj: @posts.order(created_at: :desc) %>
+    </div>
+  </div>
+</div>
